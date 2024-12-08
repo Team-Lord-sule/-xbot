@@ -534,14 +534,13 @@ async function accountLogin(state, enableCommands = [], prefix, admin = []) {
 							const { threadID } = event;
 
 					if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == userid)) {
-					api.changeNickname(`𝗛𝗔𝗖𝗞𝗔𝗜[🌐]➤𝗕𝗢𝗧☕ 𝗬𝗢𝗨𝗥 𝗣𝗙✦:『${prefix}』`, threadID, userid);
+					api.changeNickname(`𝗟𝗼𝗿𝗱 𝗞𝗶𝗻𝗴 𝗕𝗢𝗧 𝗣𝗿𝗲𝗳𝗶𝘅✦:『${prefix}』. 𝗧𝗿𝘆 𝗛𝗮𝘃𝗶𝗻𝗴 𝗔 𝗚𝗼𝗼𝗱 𝗧𝗶𝗺𝗲 𝗨𝘀𝗶𝗻𝗴 𝗠𝘆 𝗡𝗲𝘄 𝗜𝗺𝗽𝗿𝗼𝘃𝗲𝗱 𝗔𝘂𝘁𝗼𝗕𝗼𝘁.`, threadID, userid);
 
 let gifUrls = [
-        "https://i.ibb.co/JHS1WNL/image.gif",
-        "https://i.ibb.co/ZV5NdyJ/image.gif",
-        "https://i.ibb.co/CzRr9GH/image.gif",
-        "https://i.ibb.co/9ZGVFSd/image.gif",
-        "https://i.ibb.co/mTQfnHF/image.gif"
+"http://xbeta.onrender.com/tgB-C9pnP.jpg",
+"http://xbeta.onrender.com/eo99JlzSC.jpg",
+"http://xbeta.onrender.com/MxRacR8jcP.jpg",
+"http://xbeta.onrender.com/A2buBrHAN.jpg"
 ];
 
 let randomIndex = Math.floor(Math.random() * gifUrls.length);
@@ -551,9 +550,9 @@ let gifPath = __dirname + '/cache/connected.mp4';
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 		.then(response => {
 				fs.writeFileSync(gifPath, response.data); 
-				return api.sendMessage("𝗕𝗢𝗧 ➤[🌐] 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗡𝗚 ▂ ▃ ▄ ", event.threadID, () => 
+				return api.sendMessage("𝗞𝗶𝗻𝗴 𝗕𝗼𝘁 ➤ 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗡𝗚 𝗧𝗼 𝗚𝗿𝗼𝘂𝗽 ▫️◽️ ⬜️ ", event.threadID, () => 
 						api.sendMessage({ 
-								body:`✔|𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗\n\n 𝗡𝗔𝗠𝗘 [☕]: 𝗛𝗔𝗖𝗞𝗔𝗬➤𝗕𝗢𝗧☪\n\n 𝗣𝗥𝗘𝗙𝗜𝗫 : [.] \n\n 𝗔𝗗𝗠𝗜𝗜𝗡 𝗜𝗡𝗙𝗢 ♔ : 𝗣𝗛𝗔𝗥𝗢𝗨𝗞 ✦\n\n 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 𝗟𝗜𝗡𝗞 ◆: https://www.facebook.com/more.sidibe.1?mibextid=JRoKGi `, 
+								body:`✔|𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗\n\n 𝗡𝗔𝗠𝗘 [☕]: 𝗟𝗼𝗿𝗱➤𝗕𝗢𝗧☪\n\n 𝗣𝗥𝗘𝗙𝗜𝗫 : [.] \n\n 𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢 ♔ : 𝗟𝗼𝗿𝗱 𝗞𝗶𝗻𝗴 ✦\n\n 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 𝗟𝗜𝗡𝗞 ◆: https://www.facebook.com/lordjaydenSmith.1 `, 
 								attachment: fs.createReadStream(gifPath)
 						}, event.threadID)
 				);
@@ -583,7 +582,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
 												memLength.push(participantIDs.length - i++);
 												memLength.sort((a, b) => a - b);
 
-													(typeof threadID.customJoin == "undefined") ? msg = " 𝗛𝗶 𝗠𝗔𝗦𝗧𝗘𝗥 🌬  ${userName} 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗧𝗛𝗘 𝗚𝗥𝗢𝗨𝗣 🌝" : msg = threadID.customJoin;
+													(typeof threadID.customJoin == "undefined") ? msg = " 𝗛𝗶 𝗨𝗦𝗥𝗥 🌬  ${userName} 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗧𝗛𝗘 𝗚𝗥𝗢𝗨𝗣 𝗛𝗔𝗩𝗘 𝗔 𝗚𝗢𝗢𝗗 𝗧𝗜𝗠𝗘🌝" : msg = threadID.customJoin;
 													msg = msg
 														.replace(/\{uName}/g, nameArray.join(', '))
 														.replace(/\{type}/g, (memLength.length > 1) ? 'you' : 'Friend')
@@ -613,7 +612,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
 															return console.error('Failed to get user info:', err);
 													}
 													const name = userInfo[leaverID].name;
-													const type = (event.author == event.logMessageData.leftParticipantFbId) ? "⛔|𝗟𝗘𝗙𝗧 🧑‍🦯 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽." : "was 𝗞𝗜𝗖𝗞𝗘𝗗 🚮 𝗕𝗬 𝗧𝗛𝗘 𝗠𝗔𝗜𝗡 𝗔𝗗𝗠𝗜𝗡 🎖";
+													const type = (event.author == event.logMessageData.leftParticipantFbId) ? "⛔|𝗟𝗘𝗙𝗧 🧑‍🦯 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽." : "was 𝗞𝗜𝗖𝗞𝗘𝗗 🚮 𝗕𝗬 𝗧𝗛𝗘 𝗚𝗥𝗢𝗨𝗣 𝗔𝗗𝗠𝗜𝗡 🎖";
 
 													const link = ["https://i.ibb.co/JHS1WNL/image.gif"];
 													const gifPath = __dirname + "/cache/leave.gif";
@@ -776,7 +775,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
 
 													file.on('finish', () => {
 														file.close(() => {
-															api.sendMessage({ body: `𝖠𝗎𝗍𝗈 𝖣𝗈𝗐𝗇 𝖸𝗈𝗎𝖳𝗎𝖻𝖾 \n\n𝘼𝙆𝘼𝙄 𝘽𝙊𝙏 ⚪🟢`, attachment: fs.createReadStream(filePath) }, event.threadID, () => fs.unlinkSync(filePath));
+															api.sendMessage({ body: `𝖠𝗎𝗍𝗈 𝖣𝗈𝗐𝗇 𝖸𝗈𝗎𝖳𝗎𝖻𝖾 \n\n𝗟𝗼𝗿𝗱 𝘽𝙊𝙏 ⚪🟢`, attachment: fs.createReadStream(filePath) }, event.threadID, () => fs.unlinkSync(filePath));
 														});
 													});
 												})
@@ -821,20 +820,20 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
 							});
 						} else {
 							const active = Math.ceil((sender.timestamp + delay * 1000 - now) / 1000);
-							api.sendMessage(`Please wait ${active} seconds before using the "${name}" command again.`, event.threadID, event.messageID);
+							api.sendMessage(`Please wait ${active} seconds before using the "${name}" command again please user.`, event.threadID, event.messageID);
 							return;
 						}
 					}
 					if (event.body && !command && event.body?.toLowerCase().startsWith(prefix.toLowerCase())) {
-						api.sendMessage(`Invalid command please use ${prefix}help to see the list of available commands.`, event.threadID, event.messageID);
+						api.sendMessage(`Invalid command please use ${prefix}help to see the list of available commands that my owner created.`, event.threadID, event.messageID);
 						return;
 					}
 if (event.body && !command && event.body?.toLowerCase().startsWith(prefix.toLowerCase())) {
-		api.sendMessage(`Invalid command please use ${prefix}help to see the list of available commands.`, event.threadID, event.messageID);
+		api.sendMessage(`Invalid command please use ${prefix}help to see the list of available commands that my owner created.`, event.threadID, event.messageID);
 		return;
 }
 if (event.body && command && prefix && event.body?.toLowerCase().startsWith(prefix.toLowerCase()) && !aliases(command)?.name) {
-						api.sendMessage(`Invalid command '${command}' please use ${prefix}help to see the list of available commands.`, event.threadID, event.messageID);
+						api.sendMessage(`Invalid command '${command}' please use ${prefix}help to see the list of available commands that my owner created.`, event.threadID, event.messageID);
 						return;
 					}
 					for (const {
