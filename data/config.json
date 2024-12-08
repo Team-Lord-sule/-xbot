@@ -1,7 +1,7 @@
 [
   {
     "masterKey": {
-      "admin": ["100088590098255"],
+      "admin": ["61560050885709"],
       "devMode": false,
       "database": false,
 			"restartTime": 9999999
@@ -11,7 +11,7 @@
       "listenEvents": true,
       "logLevel": "silent",
       "updatePresence": true,
-      "selfListen": false,
+      "selfListen": true,
       "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64",
       "online": true,
       "autoMarkDelivery": false,
