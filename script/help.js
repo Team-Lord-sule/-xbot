@@ -56,10 +56,10 @@ module.exports.config = {
 	version: '1.0.0',
 	role: 0,
 	hasPrefix: true,
-	aliases: ['help'],
-	description: "Beginner's guide",
-	usage: "Help [page] or [command]",
-	credits: 'Develeoper',
+	aliases: ['hp'],
+	description: "Command guide",
+	usage: "{p}help page2 or command name",
+	credits: '𝗟𝗢𝗥𝗗 𝗞𝗜𝗡𝗚',
 };
 
 module.exports.run = async function ({
@@ -79,26 +79,26 @@ module.exports.run = async function ({
 			let page = 1;
 			let start = (page - 1) * pages;
 			let end = start + pages;
-			let helpMessage = `𝗛𝗔𝗖𝗞𝗔𝗜𝗔[🌐]⮕𝗕𝗢𝗧 ☪\n\n`;
+			let helpMessage = `⁎𝗟𝗢𝗥𝗗 𝗝𝗨𝗡𝗜𝗢𝗥 𝗕𝗢𝗧 ☪\n\n`;
 			for (let i = start; i < Math.min(end, commands.length); i++) {
 				helpMessage += `\n ☪${i + 1}  ✦ ${prefix}${commands[i]}\n`;
 			}
-			helpMessage += '\n𝗘𝗩𝗘𝗡𝗗 𝗖𝗠𝗗 𝗟𝗜𝗦𝗧 [📑]\n━━━━━━━━━━━\n';
+			helpMessage += '\n❃ 𝗠𝗬 𝗟𝗢𝗥𝗗 𝗘𝗩𝗘𝗡𝗧 𝗟𝗜𝗦𝗧 \n━━━━━━━━━━━\n';
 			eventCommands.forEach((eventCommand, index) => {
 				helpMessage += ` ☪ ${index + 1} ✦  ${prefix}${eventCommand}\n`;
 			});
-			helpMessage += `\n\n  𝗣𝗚𝗔𝗘 [💬] ${page}/${Math.ceil(commands.length / pages)} \n━━━━━━━━━━━\n 𝗛𝗖𝗞𝗔𝗜 [🌐] ⮕𝗕𝗢𝗧 ✦ 𝗖𝗥𝗘𝗔𝗧𝗘 𝗕𝗬 : 𝗣𝗛𝗔𝗥𝗢𝗨𝗞 ✦ 𝗙𝗕 𝗟𝗜𝗡𝗞 :https://www.facebook.com/more.sidibe.1?mibextid=JRoKGi \n━━━━━━━━━━━\n 𝗔𝗨𝗧𝗢𝗕𝗢𝗧 ⮕𝗟𝗜𝗡𝗞✦:https://hackay.onrender.com '.`;
+			helpMessage += `\n\n ⁂𝗝𝗨𝗡𝗜𝗢𝗥 𝗟𝗢𝗥𝗗 𝗣𝗔𝗚𝗘 ${page}/${Math.ceil(commands.length / pages)} \n━━━━━━━━━━━\n 𝗟𝗢𝗥𝗗 𝗝𝗨𝗡𝗜𝗢𝗥 𝗕𝗢𝗧 ✦ 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗢𝗪𝗡𝗘𝗥 : 𝗟𝗢𝗥𝗗 𝗞𝗜𝗡𝗚 ✦ 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 𝗟𝗜𝗡𝗞 :https://www.facebook.com/lordjaydenSmith.1 \n━━━━━━━━━━━\n 𝗠𝗬 𝗞𝗜𝗡𝗚 𝗔𝗨𝗧𝗢𝗕𝗢𝗧 𝗪𝗘𝗕 𝗟𝗜𝗡𝗞✦: https://lord-auto.onrender.com '.`;
 			api.sendMessage(helpMessage, event.threadID, event.messageID);
 		} else if (!isNaN(input)) {
 			const page = parseInt(input);
 			const pages = 100;
 			let start = (page - 1) * pages;
 			let end = start + pages;
-			let helpMessage = `𝗛𝗔𝗖𝗞𝗔𝗜 [🌐]⮕ 𝗕𝗢𝗧✦:\n\n`;
+			let helpMessage = `⍟𝗟𝗢𝗥𝗗 𝗝𝗨𝗡𝗜𝗢𝗥 𝗕𝗢𝗧✦:\n\n`;
 			for (let i = start; i < Math.min(end, commands.length); i++) {
 				helpMessage += `\t${i + 1}. ☪ ${prefix}${commands[i]} ✦\n`;
 			}
-			helpMessage += '\n 𝗕𝗢𝗧 [📑] :\n\n';
+			helpMessage += '\n ۞𝗝𝗨𝗡𝗜𝗢𝗥 𝗕𝗢𝗧 :\n\n';
 			eventCommands.forEach((eventCommand, index) => {
 				helpMessage += `\t${index + 1}. ☪ ${prefix}${eventCommand} ✦\n`;
 			});
