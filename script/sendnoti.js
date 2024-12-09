@@ -7,8 +7,8 @@ module.exports.config = {
 	version: "1.1.0",
 	role: 2,
 	description: "Sends a message to all groups and can only be done by the admin.",
-	hasPrefix: false,
-	aliases: ["noti"],
+	hasPrefix: true,
+	aliases: ["nn"],
 	usages: "[Text]",
 	cooldown: 0,
 };
@@ -21,7 +21,7 @@ module.exports.run = async function ({ api, event, args, admin }) {
 	async function sendMessage(thread) {
 		try {
 			await api.sendMessage(
-`𝗡𝗢𝗧𝗜𝗙𝗜𝗖𝗔𝗧𝗜𝗢𝗡 𝗙𝗥𝗢𝗠 𝗔𝗗𝗠𝗜𝗡[💬] \n━━━━━━━━━━━━━━━━━━━━━━━\n🔬:「${custom}」\n━━━━━━━━━━━━━━━━━━━━━━━\n 𝗛𝗔𝗖𝗞𝗔𝗜 [🌐]➤𝗕𝗢𝗧🧋`,
+`𝗡𝗢𝗧𝗜𝗙𝗜𝗖𝗔𝗧𝗜𝗢𝗡 𝗙𝗥𝗢𝗠 𝗔𝗗𝗠𝗜𝗡[💬] \n━━━━━━━━━━━━━━━━━━━━━━━\n🔬:「${custom}」\n━━━━━━━━━━━━━━━━━━━━━━━\n 𝗝𝘂𝗻𝗶𝗼𝗿 𝗕𝗼𝘁`,
 				thread.threadID
 			);
 			sentCount++;
