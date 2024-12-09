@@ -1,5 +1,5 @@
-<img src="https://i.ibb.co/pwTrDSR/image.jpg" alt="banner">
-<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> 🔵𝑰𝑺𝑬𝑲𝑨𝑰-𝑨𝑼𝑻𝑶𝑩𝑶𝑻🔴</h>
+<img src="https://i.imgur.com/Qk0AxX9.jpeg" alt="banner">
+<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> 🔵𝑨𝑼𝑻𝑶𝑩𝑶𝑻🔴</h>
 
 
 
@@ -9,8 +9,8 @@
 # 𝑺𝑰 𝑽𝑶𝑼𝑺 𝑬̂𝑻𝑬𝑺 𝑨𝑹𝑹𝑰𝑽𝑬́ 𝑪𝑬𝑳𝑨 𝑽𝑬𝑼𝑿 𝑫𝑰𝑹𝑬 𝑸𝑼𝑬 𝑽𝑶𝑼𝑺 𝑨𝑽𝑬𝒁 𝑽𝑼 𝑴𝑶𝑵𝑻𝑼𝑻𝑶 💝
 
 
-# 🔵𝙊𝙒𝙉𝙀𝙍 : 𝑴𝒆𝒓𝒅𝒊 𝑴𝒂𝒅𝒊𝒎𝒃𝒂
+# 🔵𝙊𝙒𝙉𝙀𝙍 : Lord king
 
-# 𝙁𝘽 𝙇𝙄𝙉𝙆:https://www.facebook.com/merdi.madimba.39
+# 𝙁𝘽 𝙇𝙄𝙉𝙆:https://www.facebook.com/lordjaydenSmith.1
 
 # 𝑴𝒆𝒓𝒄𝒊 𝒑𝒐𝒖𝒓 𝒗𝒐𝒕𝒓𝒆 𝒑𝒂𝒔𝒔𝒂𝒈𝒆
