@@ -8,9 +8,9 @@ module.exports.config = {
   hasPermision: 0,
   aliases:["rbg"], 
   commandCategory: "Utility",
-  credits: "cliff",//api by hazey 
+  credits: "lord king",//api by hazey 
   description: "Enhance your photo by removing the background.",
-  hasPrefix: false,
+  hasPrefix: true,
   cooldowns: 2,
   usePrefix: false,
   cooldown: 2,
@@ -25,7 +25,7 @@ module.exports.run = async ({ api, event, args }) => {
   let photoUrl = event.messageReply ? event.messageReply.attachments[0].url : args.join(" ");
 
   if (!photoUrl) {
-    api.sendMessage("⛔|𝗥𝗘𝗣𝗟𝗬 𝗬𝗢𝗨𝗥 𝗣𝗛𝗢𝗧𝗢 𝗢𝗥 𝗜𝗠𝗔𝗚𝗘 🔹.", threadID, messageID);
+    api.sendMessage("⛔|𝗥𝗘𝗣𝗟𝗬 𝗬𝗢𝗨𝗥 𝗣𝗛𝗢𝗧𝗢 𝗢𝗥 𝗜𝗠𝗔𝗚𝗘 🙋.", threadID, messageID);
     return;
   }
 
