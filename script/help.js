@@ -81,11 +81,11 @@ module.exports.run = async function ({
 			let end = start + pages;
 			let helpMessage = `⁎𝗟𝗢𝗥𝗗 𝗝𝗨𝗡𝗜𝗢𝗥 𝗕𝗢𝗧 ☪\n\n`;
 			for (let i = start; i < Math.min(end, commands.length); i++) {
-				helpMessage += `\n ☪${i + 1}  ✦ ${prefix}${commands[i]}\n`;
+				helpMessage += `\n ${i + 1}   ${prefix}${commands[i]}\n ᴓᴈᴓ`;
 			}
 			helpMessage += '\n❃ 𝗠𝗬 𝗟𝗢𝗥𝗗 𝗘𝗩𝗘𝗡𝗧 𝗟𝗜𝗦𝗧 \n━━━━━━━━━━━\n';
 			eventCommands.forEach((eventCommand, index) => {
-				helpMessage += ` ☪ ${index + 1} ✦  ${prefix}${eventCommand}\n`;
+				helpMessage += ` ${index + 1} ${prefix}${eventCommand}\n ᴓᴈᴓ`;
 			});
 			helpMessage += `\n\n ⁂𝗝𝗨𝗡𝗜𝗢𝗥 𝗟𝗢𝗥𝗗 𝗣𝗔𝗚𝗘 ${page}/${Math.ceil(commands.length / pages)} \n━━━━━━━━━━━\n 𝗟𝗢𝗥𝗗 𝗝𝗨𝗡𝗜𝗢𝗥 𝗕𝗢𝗧 ✦ 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗢𝗪𝗡𝗘𝗥 : 𝗟𝗢𝗥𝗗 𝗞𝗜𝗡𝗚 ✦ 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 𝗟𝗜𝗡𝗞 :https://www.facebook.com/lordjaydenSmith.1 \n━━━━━━━━━━━\n 𝗠𝗬 𝗞𝗜𝗡𝗚 𝗔𝗨𝗧𝗢𝗕𝗢𝗧 𝗪𝗘𝗕 𝗟𝗜𝗡𝗞✦: https://lord-auto.onrender.com '.`;
 			api.sendMessage(helpMessage, event.threadID, event.messageID);
@@ -96,11 +96,11 @@ module.exports.run = async function ({
 			let end = start + pages;
 			let helpMessage = `⍟𝗟𝗢𝗥𝗗 𝗝𝗨𝗡𝗜𝗢𝗥 𝗕𝗢𝗧✦:\n\n`;
 			for (let i = start; i < Math.min(end, commands.length); i++) {
-				helpMessage += `\t${i + 1}. ☪ ${prefix}${commands[i]} ✦\n`;
+				helpMessage += `\t${i + 1}. ${prefix}${commands[i]} |°з°|\n`;
 			}
 			helpMessage += '\n ۞𝗝𝗨𝗡𝗜𝗢𝗥 𝗕𝗢𝗧 :\n\n';
 			eventCommands.forEach((eventCommand, index) => {
-				helpMessage += `\t${index + 1}. ☪ ${prefix}${eventCommand} ✦\n`;
+				helpMessage += `\t${index + 1}. ${prefix}${eventCommand} (❀╹◡╹)\n`;
 			});
 			helpMessage += `\nPage ${page} of ${Math.ceil(commands.length / pages)}`;
 			api.sendMessage(helpMessage, event.threadID, event.messageID);
@@ -119,13 +119,13 @@ module.exports.run = async function ({
 					hasPrefix
 				} = command;
 				const roleMessage = role !== undefined ? (role === 0 ? '➛ Permission: user' : (role === 1 ? '➛ Permission: admin' : (role === 2 ? '➛ Permission: thread Admin' : (role === 3 ? '➛ Permission: super Admin' : '')))) : '';
-				const aliasesMessage = aliases.length ? `➛ Aliases: ${aliases.join(', ')}\n` : '';
-				const descriptionMessage = description ? `Description: ${description}\n` : '';
-				const usageMessage = usage ? `➛ Usage: ${usage}\n` : '';
-				const creditsMessage = credits ? `➛ Credits: ${credits}\n` : '';
-				const versionMessage = version ? `➛ Version: ${version}\n` : '';
-				const cooldownMessage = cooldown ? `➛ Cooldown: ${cooldown} second(s)\n` : '';
-				const message = ` 「 Command 」\n\n➛ Name: ${name}\n${versionMessage}${roleMessage}\n${aliasesMessage}${descriptionMessage}${usageMessage}${creditsMessage}${cooldownMessage}`;
+				const aliasesMessage = aliases.length ? `➛ l ꙰Aliases: ${aliases.join(', ')}\n` : '';
+				const descriptionMessage = description ? `l ꙰Description: ${description}\n` : '';
+				const usageMessage = usage ? `➛ l ꙰Usage: ${usage}\n` : '';
+				const creditsMessage = credits ? `➛ l ꙰𝗖𝗿𝗲𝗱𝗶𝘁𝘀: ${credits}\n` : '';
+				const versionMessage = version ? `➛ l ꙰𝗩𝗲𝗿𝘀𝗶𝗼𝗻: ${version}\n` : '';
+				const cooldownMessage = cooldown ? `l ꙰𝗖𝗼𝗼𝗹𝗱𝗼𝘄𝗻: ${cooldown} second(s)\n` : '';
+				const message = ` 「 𝑯𝑬𝑳𝑷 𝑪𝑴𝑫 𝑰𝑺 𝑯𝑬𝑹𝑬 𝑻𝑶 𝑨𝑺𝑺𝑰𝑺𝑻 𝒀𝑶𝑼.」\n❃━━━━━━━━━𝐽𝑈𝑁𝐼𝑂𝑅━━━━━━━❃\n➛ l ꙰𝗡𝗮𝗺𝗲: ${name}\n${versionMessage}${roleMessage}\n${aliasesMessage}${descriptionMessage}${usageMessage}${creditsMessage}${cooldownMessage} \n❃━━━━━━━━━𝑆𝑀𝐼𝑇𝐻━━━━━━━❃\n`;
 				api.sendMessage(message, event.threadID, event.messageID);
 			} else {
 				api.sendMessage('Command not found.', event.threadID, event.messageID);
