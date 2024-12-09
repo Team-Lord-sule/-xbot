@@ -1,8 +1,8 @@
 module.exports.config = {
 	name: "kick",
 	version: "0.0.1",
-	role: 2,
-	credits: "Cliff",//do not change credits
+	role: 1,
+	credits: "jay lord",//do not change credits
 	description: "kick @tag multiple",
 	usages: "kick @mention",
 	hasPrefix: false,
