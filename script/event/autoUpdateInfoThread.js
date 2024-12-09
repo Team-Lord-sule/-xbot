@@ -1,4 +1,4 @@
-module.exports = {
+module.exports.config = {
 	config: {
 		name: "autoUpdateThreadInfo",
 		version: "1.4",
