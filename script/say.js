@@ -5,9 +5,9 @@ const axios = require("axios");
 module.exports.config = {
 	name: "say",
 	version: "1.0.0",
-	aliases:["say"],
+	aliases:["sy"],
 	role: 0,
-	credits: "cliff",//mod Aesther
+	credits: "lord king",//mod Jayden Smith 
 	description: "Text to voice speech messages french",
 	hasPrefix: false,
 	usages: `Text to speech messages`,
