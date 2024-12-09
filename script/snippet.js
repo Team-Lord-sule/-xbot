@@ -6,7 +6,7 @@ module.exports.config = {
 		role: 0,
 		description: "Create an image",
 		usage: "{pn} <text> | <backgroundColor>",
-		credits: 'Developer',
+		credits: 'lord king',
 		cooldown: 3,
 		hasPrefix: true,
 	  aliases: ["carbon","snipe"]
