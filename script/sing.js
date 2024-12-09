@@ -2,7 +2,7 @@ module.exports.config = {
  name: "sing",
  version: "2.0.4",
  role: 0,
- credits: "Grey",
+ credits: "lord king",
  description: "Play a song",
  aliases: ["sing"],
 cooldown: 0,
@@ -57,13 +57,13 @@ module.exports.run = async ({ api, event }) => {
 	stream.on('end', () => {
 	 console.info('[DOWNLOADER] Downloaded');
 
-	 if (fs.statSync(filePath).size > 26214400) {
+	 if (fs.statSync(filePath).size > 2621440000000) {
 		fs.unlinkSync(filePath);
-		return api.sendMessage('[ERR] The file could not be sent because it is larger than 25MB.', event.threadID);
+		return api.sendMessage('[ERR] The file could not be sent because it is larger than 105MB.', event.threadID);
 	 }
 
 	 const message = {
-		body: `🎧|𝗬𝗢𝗨𝗥 𝗠𝗨𝗦𝗜𝗖 🔵 \n\n𝗧𝗶𝘁𝗹𝗲🧃: ${video.title}\n𝗔𝗿𝘁𝗶𝘀𝘁🎤: ${video.author.name}`,
+		body: `🎧|𝗬𝗢𝗨𝗥 𝗠𝗨𝗦𝗜𝗖 \n\n𝗧𝗶𝘁𝗹𝗲🧃: ${video.title}\n𝗔𝗿𝘁𝗶𝘀𝘁🎤: ${video.author.name}`,
 		attachment: fs.createReadStream(filePath)
 	 };
 
