@@ -10,7 +10,7 @@ const axios = require('axios');
 module.exports.config = {
   name: "ai",
   version: 1.0,
-  credits: "aesther",//Api OtinXsandip
+  credits: "𝐽𝐴𝑌𝐷𝐸𝑁 𝑆𝑀𝐼𝑇𝐻",//Api OtinXsandip
   description: "AI",
   hasPrefix: false,
   usages: "{pn} [prompt]",
@@ -22,7 +22,7 @@ module.exports.run = async function ({ api, event, args }) {
   try {
     const prompt = args.join(" ");
     if (!prompt) {
-      await api.sendMessage("𝗣𝗛𝗔𝗥𝗢𝗨𝗞 ✦\n━━━━━━━━━━━\n Hey master how can help you ?", event.threadID);
+      await api.sendMessage(" 𝐿𝑂𝑅𝐷 𝐽𝑈𝑁𝐼𝑂𝑅 𝐴𝐼\n━━━━━━━━━━━\n Hey 𝚞𝚜𝚎𝚛 how can help you ? 𝙿𝚛𝚘𝚟𝚒𝚍𝚎 𝚖𝚎 𝚊𝚗𝚢𝚝𝚑𝚒𝚗𝚐 𝚒 𝚠𝚘𝚞𝚕𝚍 𝚊𝚗𝚜𝚎𝚠𝚎𝚛.\n━━━━━━━━━━━\n Have a create time using my auto bot\n━━━━━━━━━━━\n", event.threadID);
       return;
     }
     const response = await axios.get(`https://sandipbaruwal.onrender.com/gpt?prompt=${encodeURIComponent(prompt)}`);
@@ -37,7 +37,7 @@ module.exports.run = async function ({ api, event, args }) {
       }
     }
 
-    await api.sendMessage(`𝗣𝗛𝗔𝗥𝗢𝗨𝗞 ✦ \n━━━━━━━━━━━\n${formattedAnswer} ☕`, event.threadID);
+    await api.sendMessage(`𝐿𝑂𝑅𝐷 𝐾𝐼𝑁𝐺 𝐴𝐼 \n━━━━━━━━━━━\n${formattedAnswer} \n━━━━━━━━━━━\nNeed to create your own autobot come to my website and create your own autobot. My autobot website is https://lord-auto.onrender.com soon the owner will add new commands for you to use\n━━━━━━━━━━━\n`, event.threadID);
   } catch (error) {
     console.error("Error:", error.message);
   }
