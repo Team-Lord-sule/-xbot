@@ -7,11 +7,11 @@ module.exports.config = {
   name: "pin",
   version: "1.4",
   hasPermission: 0,
-  credits: "Hazeyy",
+  credits: "lord king",
   description: "( 𝙿𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝 )",
   commandCategory: "𝚗𝚘 𝚙𝚛𝚎𝚏𝚒𝚡",
   usages: "( 𝚂𝚎𝚊𝚛𝚌𝚑 𝙸𝚖𝚊𝚐𝚎𝚜 𝚘𝚗 𝙿𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝 )",
-  cooldowns: 20,
+  cooldowns: 10,
 };
 
 module.exports.handleEvent = async function ({ api, event }) {
