@@ -7,10 +7,10 @@ module.exports.config = {
     aliases:["sing"], 
     role: 0,
     hasPermision: 0,
-    credits: "cliff",//api by kim
+    credits: "Jay king",//api by kim
     description: "Search and play music from Spotify",
     commandCategory: "spotify",
-    hasPrefix: false,
+    hasPrefix: true,
     usage: "[song name]",
     cooldowns: 5,
     usePrefix: false,
