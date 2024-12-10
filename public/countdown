@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>countdown</title>
+</head>
+<body>
+<div id="countdown"></div>
+
+<script>
+function startCountdown() {
+  var hours = 48;
+  var seconds = hours * 60 * 60;
+
+  var countdownInterval = setInterval(function() {
+    seconds--;
+
+    var hoursLeft = Math.floor(seconds / 3600);
+    var minutesLeft = Math.floor((seconds % 3600) / 60);
+    var secondsLeft = seconds % 60;
+
+    document.getElementById('countdown').innerText = `Online for: ${hoursLeft} hours, ${minutesLeft} minutes, ${secondsLeft} seconds`;
+
+    if (seconds <= 0) {
+      clearInterval(countdownInterval);
+      document.getElementById('countdown').innerText = '48-hour limit reached. Online status ended.';
+    }
+  }, 1000);
+}
+
+startCountdown();
+</script>
+</body>
+</html>
