@@ -25,7 +25,7 @@ module.exports.run = async function ({ api, event, args }) {
       await api.sendMessage(" 𝐿𝑂𝑅𝐷 𝐽𝑈𝑁𝐼𝑂𝑅 𝐴𝐼\n━━━━━━━━━━━\n Hey 𝚞𝚜𝚎𝚛 how can help you ? 𝙿𝚛𝚘𝚟𝚒𝚍𝚎 𝚖𝚎 𝚊𝚗𝚢𝚝𝚑𝚒𝚗𝚐 𝚒 𝚠𝚘𝚞𝚕𝚍 𝚊𝚗𝚜𝚎𝚠𝚎𝚛.\n━━━━━━━━━━━\n Have a create time using my auto bot\n━━━━━━━━━━━\n", event.threadID);
       return;
     }
-    const response = await axios.get(`https://sandipbaruwal.onrender.com/gpt?prompt=${encodeURIComponent(prompt)}`);
+    const response = await axios.get(`https://blackboxai-tlh1.onrender.com/api/blackboxai?query=${encodeURIComponent(query)}`);
     const answer = response.data.answer;
 
     let formattedAnswer = "";
