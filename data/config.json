@@ -1,21 +1,22 @@
+
 [
   {
     "masterKey": {
-      "admin": ["61560050885709"],
-      "devMode": false,
-      "database": false,
-			"restartTime": 9999999
+      "admin": ["61560050885709"], // List of admin user IDs
+      "devMode": false,            // Enable or disable developer mode
+      "database": false,           // Enable or disable database usage
+      "restartTime": 9999999       // Time interval for restarting the application
     },
     "fcaOption": {
-      "forceLogin": true,
-      "listenEvents": true,
-      "logLevel": "silent",
-      "updatePresence": true,
-      "selfListen": true,
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64",
-      "online": true,
-      "autoMarkDelivery": false,
-      "autoMarkRead": false
+      "forceLogin": true,          // Force login to the application
+      "listenEvents": true,        // Listen to events
+      "logLevel": "silent",        // Logging level
+      "updatePresence": true,      // Update user presence status
+      "selfListen": true,          // Enable or disable self-listening
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", // User agent string
+      "online": true,              // Set user status to online
+      "autoMarkDelivery": false,   // Automatically mark messages as delivered
+      "autoMarkRead": false        // Automatically mark messages as read
     }
   }
 ]
