@@ -1,7 +1,7 @@
 const allOnEvent = global.GoatBot.onEvent;
-
 const fs = require("fs");
 const cron = require("node-cron");
+
 const greetings = {
   morning: [
     { time: "7:35 AM", message: "Good morning! ☀️ How about starting the day with a delicious breakfast?" },
@@ -20,8 +20,8 @@ const greetings = {
   ],
   eveningDinner: [
     { time: "6:00 PM", message: "Dinner plans tonight? Let's enjoy a hearty meal together." },
-    { time: "7:36 PM", message: "Evening has come, and so has the dinner bell! 🍽️" },
     { time: "7:00 PM", message: "Dinner is served! Who's joining me at the table?" },
+    { time: "7:36 PM", message: "Evening has come, and so has the dinner bell! 🍽️" },
   ],
   lateNightSnack: [
     { time: "11:00 PM", message: "Late-night munchies? Come on over for some snacks!" },
@@ -30,41 +30,41 @@ const greetings = {
   ],
 };
 
-  module.exports = {
+module.exports = {
   config: {
     name: "autogreet",
     version: "1.1",
     author: "Zed",
     description: "Autogreeting",
-    category: "events"
+    category: "events",
   },
 
-onStart: async ({ api, args, message, event, threadsData, usersData, dashBoardData, threadModel, userModel, dashBoardModel, role, commandName }) => {
+  onStart: async ({ api, event }) => {
+    scheduleGreeting(greetings.morning, '0 8 * * *');
+    scheduleGreeting(greetings.lunchtime, '0 12 * * *');
+    scheduleGreeting(greetings.afternoonSnack, '0 15 * * *');
+    scheduleGreeting(greetings.eveningDinner, '0 18 * * *');
+    scheduleGreeting(greetings.lateNightSnack, '0 23 * * *');
+  }
+};
 
-cron.schedule('0 8 * * *', () => {
-  sendRandomGreeting(greetings.morning);
-});
+/**
+ * Schedules a greeting to be sent at specified cron time.
+ * @param {Array} greetingArray - Array of greeting objects with time and message.
+ * @param {string} cronTime - Cron time string to schedule the greeting.
+ */
+function scheduleGreeting(greetingArray, cronTime) {
+  cron.schedule(cronTime, () => {
+    sendRandomGreeting(greetingArray);
+  });
+}
 
-cron.schedule('0 12 * * *', () => {
-  sendRandomGreeting(greetings.lunchtime);
-});
-
-cron.schedule('0 15 * * *', () => {
-  sendRandomGreeting(greetings.afternoonSnack);
-});
-
-cron.schedule('0 18 * * *', () => {
-  sendRandomGreeting(greetings.eveningDinner);
-});
-
-cron.schedule('0 23 * * *', () => {
-  sendRandomGreeting(greetings.lateNightSnack);
-});
-
+/**
+ * Sends a random greeting from the provided greeting array.
+ * @param {Array} greetingArray - Array of greeting objects with time and message.
+ */
 function sendRandomGreeting(greetingArray) {
   const randomIndex = Math.floor(Math.random() * greetingArray.length);
   const { time, message } = greetingArray[randomIndex];
   console.log(`[${time}] ${message}`);
-}
-}
-};
+                     }
