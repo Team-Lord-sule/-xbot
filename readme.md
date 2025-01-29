@@ -1,6 +1,6 @@
 
 
-```markdown
+
 <img src="https://i.imgur.com/Qk0AxX9.jpeg" alt="banner">
 <h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> 🔵𝑨𝑼𝑻𝑶𝑩𝑶𝑻🔴</h1>
 
