@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "anhdaden",
   version: "1.0.0",
-  hasPermssion: 0,
+  hasPrefix: false,
   credits: "smith junior",
   description: "White brother :v",
   commandCategory: "Edit-IMG",
