@@ -1,7 +1,7 @@
 module.exports.config = {
 	name: "system",
 	version: "1.0.1",
-	hasPermssion: 0,
+	hasPrefix: false,
 	credits: "Mirai Team",
 	description: "Xem thông tin phần cứng mà bot đang sử dụng",
 	commandCategory: "system",
