@@ -1,5 +1,5 @@
 ### Jayden Auto-bot web that it takes time to create 
-<img src="https://i.imgur.com/Qk0AxX9.jpeg" alt="banner">
+<img src="https://i.imgur.com/XT539IP.jpeg" alt="banner">
 <h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px">Jayden Auto-bot web</h>
 
 
