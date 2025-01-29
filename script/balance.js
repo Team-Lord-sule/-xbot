@@ -1,6 +1,7 @@
 module.exports.config = {
     name: "balance",
     version: "1.0.2",
+    hasPrefix: false,
     credits: "Jayden Smith",
     description: "Check your own or another user's balance",
     commandCategory: "economy",
