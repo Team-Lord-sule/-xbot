@@ -1,16 +1,18 @@
+### Jayden Auto-bot web that it takes time to create 
 <img src="https://i.imgur.com/Qk0AxX9.jpeg" alt="banner">
-<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px"> 🔵𝑨𝑼𝑻𝑶𝑩𝑶𝑻🔴</h>
+<h1 align="center"><img src="./dashboard/images/logo-non-bg.png" width="22px">Jayden Auto-bot web</h>
 
 
 
-# 𝑪𝑬 𝑺𝑰𝑻𝑬 𝑬𝑺𝑻 𝑳𝑨 𝑷𝑶𝑼𝑹 𝑽𝑶𝑼𝑺 𝑨𝑰𝑫𝑬𝒁 𝑨 𝑪𝑹𝑬𝑬𝒁 𝑫𝑬𝑺 𝑨𝑼𝑻𝑶𝑩𝑶𝑻 𝑭𝑨𝑪𝑰𝑳𝑬𝑴𝑬𝑵𝑻😌
+# do not try to change anything that will cause bugs in the web
 
 
-# 𝑺𝑰 𝑽𝑶𝑼𝑺 𝑬̂𝑻𝑬𝑺 𝑨𝑹𝑹𝑰𝑽𝑬́ 𝑪𝑬𝑳𝑨 𝑽𝑬𝑼𝑿 𝑫𝑰𝑹𝑬 𝑸𝑼𝑬 𝑽𝑶𝑼𝑺 𝑨𝑽𝑬𝒁 𝑽𝑼 𝑴𝑶𝑵𝑻𝑼𝑻𝑶 💝
+# take care of this autobot web 
 
 
-# 🔵𝙊𝙒𝙉𝙀𝙍 : Lord king
+# owner : Jayde smith 
+# owner2 : Lila smith 
 
-# 𝙁𝘽 𝙇𝙄𝙉𝙆:https://www.facebook.com/lordjaydenSmith.1
+# FB Link:https://www.facebook.com/lordjaydenSmith.1
 
-# 𝑴𝒆𝒓𝒄𝒊 𝒑𝒐𝒖𝒓 𝒗𝒐𝒕𝒓𝒆 𝒑𝒂𝒔𝒔𝒂𝒈𝒆
+# Thanks you
